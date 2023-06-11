@@ -9,8 +9,8 @@ type TSelectedLinkProps = {
 /** A link that gets the 'selectedNavLink' class if to == on */
 export default function SLink({ to, on, children }: TSelectedLinkProps) {
     if (to == on) {
-        return <Link className="selectedNavLink" to={to}>{children}</Link>
+        return <Link className="selectedNavLink" to={to === undefined ? "/" : to}>{children}</Link>
     } else {
-        return <Link to={to}>{children}</Link>
+        return <Link to={to === undefined ? "/" : to}>{children}</Link>
     }
 }
