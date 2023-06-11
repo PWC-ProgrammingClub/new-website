@@ -1,0 +1,28 @@
+
+
+
+.topNav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  .topNav a {
+    display: block;
+    color: darkblue;
+    font-weight: bold;
+    width: "10%";
+    background-color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+  }
+  
+  .topNav a:hover {
+    background-color: antiquewhite;
+  }
+
+
+  .selectedNavLink {
+    background-color: greenyellow !important;
+  }

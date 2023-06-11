@@ -26,7 +26,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,4 +65,41 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+/* Root of app */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* For error messages */
+.error {
+  color: red;
+  font-size: 10px;
+  max-width: 150px;
+  border: 1px dotted red;
+  background-color: rgba(100,100,100,0.1);
+  border-radius: 10px;
+}
+
+
+/* For cards */
+.card {
+  padding: 2em;
+  background-color: pink;
+  color: black;
+}
+
+/* For centered content */
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  display: block;
+  background-color: black;
 }
