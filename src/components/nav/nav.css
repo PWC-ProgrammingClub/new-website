@@ -1,28 +1,32 @@
-
-
-
 .topNav {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-  }
-  .topNav a {
-    display: block;
-    color: darkblue;
-    font-weight: bold;
-    width: "10%";
-    background-color: aliceblue;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-  }
-  
-  .topNav a:hover {
-    background-color: antiquewhite;
-  }
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	position: relative;
+}
+.navWrapper {
+	box-sizing: border-box;
+	border-bottom: solid 4px aliceblue;
+}
+.topNav a {
+	display: block;
+	color: darkblue;
+	font-weight: bold;
+	width: "10%";
+	background-color: aliceblue;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-family: Ac437;
+}
 
+.topNav a:hover {
+	background-color: antiquewhite;
+}
 
-  .selectedNavLink {
-    background-color: greenyellow !important;
-  }
+.selectedNavLink {
+	background-color: rgb(61, 47, 255) !important;
+	color: white !important;
+}

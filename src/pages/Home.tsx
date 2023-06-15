@@ -6,9 +6,8 @@ import { PageLayout } from '../components/layout'
 export default function Home() {
   return (
     <PageLayout on='/'>
-
       <div className="card">
-        <h3>PennWest Programming Clb</h3>
+        <h3>PennWest Programming Club</h3>
         <h5>The best club!</h5>
         <div className="centered">
         </div>

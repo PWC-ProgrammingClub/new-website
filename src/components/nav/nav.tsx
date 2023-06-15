@@ -6,9 +6,11 @@ type TPageNavProps = {
     on?: string
 }
 export default function PageNav({ on }: TPageNavProps) {
-    return <nav className='topNav'>
-        <SLink to="/" on={on}>Home</SLink>
-        <SLink to="/about" on={on}>About</SLink>
-        <SLink to="/posts/0/10" on={on}>Posts</SLink>
-    </nav>
+    return <div className='navWrapper'>
+        <nav className='topNav'>
+            <SLink to="/" on={on}>Home</SLink>
+            <SLink to="/about" on={on}>About</SLink>
+            <SLink to="/posts/0/10" on={on}>Posts</SLink>
+        </nav>
+    </div>
 }
