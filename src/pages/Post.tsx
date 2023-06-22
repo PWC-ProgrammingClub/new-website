@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { PageLayout } from "../components/layout";
 import { useEffect, useState } from "react";
 import { Remark } from "react-remark";
+import { getContent } from "../services/remark";
+import "./Post.css"
 
 /**
  * Post uses the dynamic routing provided by react-router-dom to fetch from the server the raw markdown data.
@@ -30,8 +32,12 @@ export default function Post() {
     if (result.error) {
         return <PageLayout><div className="error">Problem loading post! {result.error}</div></PageLayout>
     }
+    const md = getContent(result.data)
     return <PageLayout>
-        <Remark>{result.data}</Remark></PageLayout>
+        <div className='post-content'>
+            <Remark>{md}</Remark>
+        </div>
+    </PageLayout>
 
 
 }

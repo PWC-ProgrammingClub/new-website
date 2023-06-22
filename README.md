@@ -4,6 +4,13 @@ Add your post to `/public/posts` in markdown format.
 
 If you are referencing an image in your posts, reference it as though you were navigating from the base of public, rather than from a path relative to your post.
 
+### Todo
+
+- Extract YAML Front Matter from Markdown posts to determine title, brief, tags, category
+- Display the Markdown without the YAML Front Matter
+- Improve the styling of the Markdown
+- Later: Tags? Improve index.json?
+
 # Random Notes
 - Posts
   - Use tags
