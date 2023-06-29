@@ -1,22 +1,25 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import indexify from "vite-plugin-indexify";
-import Unfonts from "unplugin-fonts/vite";
+// import Unfonts from "unplugin-fonts/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
 		react(),
-		Unfonts({
-			custom: {
-				display: "swap",
-				families: {
-					Ac437: {
-						src: "./src/assets/fonts/Ac437_IBM_EGA_8x8.ttf",
-					},
-				},
-			},
-		}),
+		// Unfonts({
+		// 	custom: {
+		// 		display: "swap",
+		// 		families: {
+		// 			Ac437: {
+		// 				src: "./src/assets/fonts/Ac437_IBM_EGA_8x8.ttf",
+		// 			},
+		// 			ToshibaSat: {
+		// 				src: "./src/assets/fonts/PxPlus_ToshibaSat_9x16.ttf",
+		// 			},
+		// 		},
+		// 	},
+		// }),
 		indexify([
 			{
 				directory: "posts",

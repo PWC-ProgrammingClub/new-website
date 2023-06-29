@@ -6,10 +6,15 @@ If you are referencing an image in your posts, reference it as though you were n
 
 ### Todo
 
-- Extract YAML Front Matter from Markdown posts to determine title, brief, tags, category
-- Display the Markdown without the YAML Front Matter
-- Improve the styling of the Markdown
-- Later: Tags? Improve index.json?
+- ~~Extract YAML Front Matter from Markdown posts to determine title, brief, tags, category~~
+- ~~Display the Markdown without the YAML Front Matter~~
+- ~~Improve the styling of the Markdown~~
+- ~~Custom Font(s)~~ See src/index.css for @font-face examples to add more custom fonts
+- Add about page content
+- Logo smaller, and as an image always as part of navbar; takes you home
+- ~~Color Palette~~
+- Later: Tags? Improve index.json? -> This would best be added as a feature to [indexify](https://github.com/klm127/vite-plugin-indexify). Indexify should be able to take a custom function which could then do some remark parsing of yaml front matter and add tags to the index.json
+
 
 # Random Notes
 - Posts
